@@ -4,16 +4,16 @@
 
 ## usersテーブル
 
-| Column              | Type   | Options     |
-| ------------------- | ------ | ------------|
-| nickname            | string | null: false |
-| email               | string | null: false |
-| encrypted_password  | string | null: false |
-| family_name         | string | null: false |
-| first_name          | string | null: false |
-| read_family         | string | null: false |
-| read_first          | string | null: false |
-| birth_date          | date   | null: false |
+| Column              | Type   | Options                   |
+| ------------------- | ------ | --------------------------|
+| nickname            | string | null: false               |
+| email               | string | null: false, unique: true |
+| encrypted_password  | string | null: false               |
+| family_name         | string | null: false               |
+| first_name          | string | null: false               |
+| read_family         | string | null: false               |
+| read_first          | string | null: false               |
+| birth_date          | date   | null: false               |
 
 ### Association
 - has_many :items
